@@ -22,35 +22,29 @@ and add the following repository
 
 The idea is that you use methods instead of comments. So normally you would write
 
-    ```
     //ARRANGE create an an empty stack
     Stack<Integer> stack = new Stack<Integer>();
     //ACT pushing an element onto the stack
     stack.push(Integer.valueOf(42));
     //ASSUME the stack shouldn't be empty anymore
     assertFalse(stack.isEmpty());
-    ```
 now you wrote
 
-    ```
     ARRANGE("an empty stack");
     Stack<Integer> stack = new Stack<Integer>();
     ACT("pushing an element onto the stack");
     stack.push(Integer.valueOf(42));
     ASSUME("the stack shouldn't be empty anymore");
     assertFalse(stack.isEmpty());
-    ```
 
 and can get a simple console report
 
-    ```
     ARRANGE - an empty set
     ACT - adding an element to the set
     ASSUME - the set should'nt be empty anymore
      => Test successful
-    ```
 
 You can easily write more sophisticated reporter. Feel free to send pull-request
 of your implementation.
 
-See /junit-doc/src/test/java/aaa/demo/StackTest.java for an example.
+See `/junit-doc/src/test/java/aaa/demo/StackTest.java` for an example.
