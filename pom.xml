@@ -84,8 +84,9 @@
         </license>
     </licenses>
     <scm>
-        <url>scm:git:git@github.com:opensource21/fuwesta.git</url>
-        <connection>scm:git:git@github.com:opensource21/fuwesta.git</connection>
-        <developerConnection>scm:git:git@github.com:opensource21/fuwesta.git</developerConnection>
+
+        <url>scm:git:git@github.com:ppi-ag/junit-doc.git</url>
+        <connection>scm:git:git@github.com:ppi-ag/junit-doc.git</connection>
+        <developerConnection>scm:git:git@github.com:ppi-ag/junit-doc.git</developerConnection>
     </scm>
 </project>
