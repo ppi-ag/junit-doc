@@ -6,10 +6,19 @@
     <version>0.2-SNAPSHOT</version>
     <name>junit-doc</name>
     <description>Small helper-classes for junit-documentation follwing the AAA-Pattern.</description>
+    <url>https://github.com/ppi-ag/junit-doc</url>
     <organization>
         <name>PPI AG</name>
         <url>http://www.ppi.de</url>
     </organization>
+    <developers>
+        <developer>
+            <name>niels</name>
+            <email>opensource21@gmail.com</email>
+            <organization>PPI AG</organization>
+            <organizationUrl>http://www.ppi.de</organizationUrl>
+        </developer>
+    </developers>
     <properties>
         <java.version>1.7</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -84,9 +93,8 @@
         </license>
     </licenses>
     <scm>
-
-        <url>scm:git:git@github.com:ppi-ag/junit-doc.git</url>
-        <connection>scm:git:git@github.com:ppi-ag/junit-doc.git</connection>
+        <url>https://github.com/ppi-ag/junit-doc</url>
+        <connection>scm:git:https://github.com/ppi-ag/junit-doc.git</connection>
         <developerConnection>scm:git:git@github.com:ppi-ag/junit-doc.git</developerConnection>
     </scm>
 </project>
