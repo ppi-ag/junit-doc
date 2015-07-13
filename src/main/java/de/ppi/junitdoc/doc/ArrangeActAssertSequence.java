@@ -18,7 +18,7 @@ import java.util.List;
  * <li><code>ALSO</code> Further asserts expected results have occurred. Can use
  * 0 to n-times.</li>
  * </ol>
- * 
+ *
  * @author niels
  *
  */
@@ -45,7 +45,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Get the current sequence.
-     * 
+     *
      * @return the sequence of {@link Step}.
      */
     public static List<Step> sequence() {
@@ -54,7 +54,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Arrange a necessary precondition or input.
-     * 
+     *
      * @param description description of what is done.
      */
     public static void ARRANGE(String description) {
@@ -64,7 +64,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Further arrange of necessary precondition and input.
-     * 
+     *
      * @param description description of what is done.
      */
     public static void AND(String description) {
@@ -73,7 +73,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Act on the object or method under test.
-     * 
+     *
      * @param description description of what ist done.
      */
     public static void ACT(String description) {
@@ -82,7 +82,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Assert that the expected result have occurred.
-     * 
+     *
      * @param description description of what is assert.
      */
     public static void ASSUME(String description) {
@@ -91,7 +91,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * Further assert that the expected result have occurred.
-     * 
+     *
      * @param description description of what is assert.
      */
     public static void ALSO(String description) {
@@ -106,7 +106,7 @@ public final class ArrangeActAssertSequence {
     // --
     /**
      * Declares all phases and ensures the correct order.
-     * 
+     *
      * @author niels
      *
      */
@@ -115,31 +115,31 @@ public final class ArrangeActAssertSequence {
         ARRANGE {
             @Override
             public Phase toNextPhaseOrFail(Phase nextPhase) {
-                return toNextPhaseOrFail(nextPhase, AND, ACT);
+                return Phase.toNextPhaseOrFail(nextPhase, AND, ACT);
             }
         },
         AND {
             @Override
             public Phase toNextPhaseOrFail(Phase nextPhase) {
-                return toNextPhaseOrFail(nextPhase, AND, ACT);
+                return Phase.toNextPhaseOrFail(nextPhase, AND, ACT);
             }
         },
         ACT {
             @Override
             public Phase toNextPhaseOrFail(Phase nextPhase) {
-                return toNextPhaseOrFail(nextPhase, ASSUME);
+                return Phase.toNextPhaseOrFail(nextPhase, ASSUME);
             }
         },
         ASSUME {
             @Override
             public Phase toNextPhaseOrFail(Phase nextPhase) {
-                return toNextPhaseOrFail(nextPhase, ALSO);
+                return Phase.toNextPhaseOrFail(nextPhase, ALSO);
             }
         },
         ALSO {
             @Override
             public Phase toNextPhaseOrFail(Phase nextPhase) {
-                return toNextPhaseOrFail(nextPhase, ALSO);
+                return Phase.toNextPhaseOrFail(nextPhase, ALSO);
             }
         };
 
@@ -160,7 +160,7 @@ public final class ArrangeActAssertSequence {
 
     /**
      * A single step of AAA-Pattern.
-     * 
+     *
      * @author niels
      *
      */
@@ -176,7 +176,7 @@ public final class ArrangeActAssertSequence {
 
         /**
          * Get the current phase.
-         * 
+         *
          * @return the current phase.
          */
         public Phase getPhase() {
@@ -185,7 +185,7 @@ public final class ArrangeActAssertSequence {
 
         /**
          * Get description what happens.
-         * 
+         *
          * @return description what happens.
          */
         public String getDescription() {
