@@ -103,9 +103,6 @@
                         <goals>
                             <goal>sign</goal>
                         </goals>
-                        <configuration>
-                            <keyname>EA079D89</keyname>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
