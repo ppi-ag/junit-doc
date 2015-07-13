@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.ppi.oss</groupId>
     <artifactId>junit-doc</artifactId>
-    <version>0.2</version>
+    <version>0.3-SNAPSHOT</version>
     <name>junit-doc</name>
     <description>Small helper-classes for junit-documentation follwing the AAA-Pattern.</description>
     <url>https://github.com/ppi-ag/junit-doc</url>
@@ -146,6 +146,6 @@
         <url>https://github.com/ppi-ag/junit-doc</url>
         <connection>scm:git:https://github.com/ppi-ag/junit-doc.git</connection>
         <developerConnection>scm:git:git@github.com:ppi-ag/junit-doc.git</developerConnection>
-      <tag>junit-doc-0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
