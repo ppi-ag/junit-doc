@@ -8,17 +8,8 @@ If you want to use it add the following dependency to your pom.
     <dependency>
         <groupId>de.ppi.oss</groupId>
         <artifactId>junit-doc</artifactId>
-        <version>0.1</version>
+        <version>0.1</version>2
     </dependency>
-
-and add the following repository
-
-    <repositories>
-        <repository>
-            <id>opensource21</id>
-            <url> http://opensource21.github.com/releases</url>
-        </repository>
-    </repositories>
 
 The idea is that you use methods instead of comments. So normally you would write
 
