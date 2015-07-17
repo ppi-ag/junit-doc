@@ -8,7 +8,7 @@ If you want to use it add the following dependency to your pom.
     <dependency>
         <groupId>de.ppi.oss</groupId>
         <artifactId>junit-doc</artifactId>
-        <version>0.1</version>2
+        <version>0.2</version>
     </dependency>
 
 The idea is that you use methods instead of comments. So normally you would write
